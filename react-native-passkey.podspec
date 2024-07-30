@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
     s.dependency "RCTRequired"
     s.dependency "RCTTypeSafety"
     s.dependency "ReactCommon/turbomodule/core"
-    s.dependency "SwiftCBOR", :git => "https://github.com/myfreeweb/SwiftCBOR"
+    s.dependency "SwiftCBOR", :path => "../SwiftCBOR.podspec"
   end
 end
