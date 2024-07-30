@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1CAAF8622C592D2500585733 /* SwiftCBOR in Frameworks */ = {isa = PBXBuildFile; productRef = 1CAAF8612C592D2500585733 /* SwiftCBOR */; };
 		1F535585290D437E00374331 /* PasskeyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F535584290D437E00374331 /* PasskeyDelegate.swift */; };
 		F4FF95D7245B92E800C19C63 /* Passkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* Passkey.swift */; };
 /* End PBXBuildFile section */
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CAAF8622C592D2500585733 /* SwiftCBOR in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +77,6 @@
 			dependencies = (
 			);
 			name = Passkey;
-			packageProductDependencies = (
-				1CAAF8612C592D2500585733 /* SwiftCBOR */,
-			);
 			productName = RCTDataManager;
 			productReference = 134814201AA4EA6300B7C361 /* libPasskey.a */;
 			productType = "com.apple.product-type.library.static";
@@ -109,9 +104,6 @@
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
-			packageReferences = (
-				1CAAF8602C592D2500585733 /* XCRemoteSwiftPackageReference "SwiftCBOR" */,
-			);
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,25 +280,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		1CAAF8602C592D2500585733 /* XCRemoteSwiftPackageReference "SwiftCBOR" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/myfreeweb/SwiftCBOR";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1CAAF8612C592D2500585733 /* SwiftCBOR */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1CAAF8602C592D2500585733 /* XCRemoteSwiftPackageReference "SwiftCBOR" */;
-			productName = SwiftCBOR;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58B511D31A9E6C8500147676 /* Project object */;
 }

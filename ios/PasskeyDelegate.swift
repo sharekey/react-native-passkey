@@ -1,5 +1,4 @@
 import Foundation
-import SwiftCBOR
 import AuthenticationServices
 
 @available(iOS 15.0, *)
