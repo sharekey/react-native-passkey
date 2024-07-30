@@ -1,20 +1,15 @@
 Pod::Spec.new do |s|
-    s.name = 'SwiftCBOR'
-    s.version = '0.4.7'
-    s.license = { type: 'public domain', file: 'UNLICENSE' }
-    s.summary = 'A CBOR implementation for Swift'
-    s.homepage = 'https://github.com/unrelentingtech/SwiftCBOR'
-    s.authors = {
-      'Val' => 'val@packett.cool',
-      'Ham' => 'hamchapman@gmail.com'
-    }
-    s.source = { git: 'https://github.com/unrelentingtech/SwiftCBOR.git', tag: "v#{s.version}" }
+    s.name         = 'SwiftCBOR'
+    s.version      = '0.4.7' # Use the latest version available
+    s.summary      = 'CBOR encoder/decoder for Swift'
+    s.description  = <<-DESC
+                     SwiftCBOR is a CBOR encoder/decoder for Swift.
+                     DESC
+    s.homepage     = 'https://github.com/myfreeweb/SwiftCBOR'
+    s.license      = { :type => 'MIT', :file => 'LICENSE' }
+    s.author       = { 'myfreeweb' => 'me@myfreeweb.com' }
+    s.source       = { :git => 'https://github.com/myfreeweb/SwiftCBOR.git', :tag => s.version.to_s }
+    s.ios.deployment_target = '10.0'
+    s.source_files  = 'Sources/**/*.swift'
     s.swift_version = '5.0'
-  
-    s.ios.deployment_target = '11.0'
-    s.osx.deployment_target = '10.12'
-  
-    s.source_files = 'Sources/**/*.{swift,h}'
-  
-    s.requires_arc = true
-end
+  end
